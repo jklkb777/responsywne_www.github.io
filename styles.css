@@ -1,0 +1,128 @@
+body {
+margin: 0px;
+font-size: 18px;
+}
+
+.container {
+    /* width: 900px; */
+    display: flex;
+    margin: 0 auto;
+}
+.left {
+    /* width: 300px; */
+    width: 40%;
+    /* background-color: rgb(128, 128, 255); */
+    color: white;
+    background-color: #323232;
+    opacity: 1;
+    background-size: 25px 25px;
+    background-image: repeating-linear-gradient(45deg, #545454 0, #545454 2.5px, #323232 0, #323232 50%);
+    padding: 30px;
+    
+}
+.right {
+    /* background-color: aliceblue; */
+    padding: 30px;
+    background-color: #ffffff;
+opacity: 1;
+background-image:  radial-gradient(#e3e2f3 2px, transparent 2px), radial-gradient(#e3e2f3 2px, #ffffff 2px);
+background-size: 80px 80px;
+background-position: 0 0,40px 40px;
+
+}
+.left h3 {
+    color: rgb(255, 231, 111);
+    font-size: 30px
+}
+.left h4 {
+    align-items: center;
+    display: flex;
+}
+.right h4 {
+    margin-bottom: 0px;
+}
+h1 {
+    letter-spacing: 3px;
+}
+.avatar {
+    border-radius: 50%;
+}
+.icon {
+    width: 30px;
+    align-items: center;
+    margin-right: 12px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+h5 {
+    display: inline;
+    color: rgb(255, 111, 111);;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin: 0px;
+}
+h4 {
+    font-size: 24px;
+}
+
+.contact-data {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1060px) { 
+    .left {
+        width: 59%;
+        padding: 30px;
+    }
+    .avatar{
+        width: 140px;
+    }
+  
+}
+
+@media only screen and (max-width: 840px) { 
+    .left {
+        width: 20%;
+        padding: 30px;
+    }
+    .avatar{
+        width: 140px;
+    }
+  
+}
+
+@media only screen and (max-width: 760px) {
+    .container {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+    .left {
+        width: auto;
+        padding: 16px;
+        text-align: center;
+        padding-top: 24px;
+    }
+    .right {
+        padding: 6px;
+    }
+    .avatar {
+        margin: 0 auto;
+    }
+    img .icon{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .left h4{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    }
+  
